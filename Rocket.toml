@@ -1,0 +1,18 @@
+[default]
+address = "127.0.0.1"
+port = 8000
+
+[debug]
+address = "127.0.0.1"
+port = 8000
+keep_alive = 5
+log_level = "debug"
+
+[release]
+address = "0.0.0.0"
+port = 80
+keep_alive = 10
+log_level = "critical"
+
+[default.databases.sqlite_logs]
+url = "sqlite:./db.sqlite"
