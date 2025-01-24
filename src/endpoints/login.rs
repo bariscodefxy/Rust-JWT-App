@@ -5,7 +5,7 @@ use rocket::http::Status;
 use rocket::response::status;
 use serde::Deserialize;
 use jsonwebtoken::{encode, Header, EncodingKey};
-use bcrypt::{verify, hash};
+use bcrypt::verify;
 
 #[derive(Deserialize)]
 pub struct LoginRequest {
